@@ -12,4 +12,4 @@
 // player "clicks and drags letter" to the display window.
 // The display window will be in the center. It will have 7 spaces. 
 // Below that is a play button.  and a skip button. The skip button will subtract 10 points from your total score if you press it.
-// 
+// There will be a display to keep your total score after one minute.
