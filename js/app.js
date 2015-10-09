@@ -7,4 +7,5 @@
 // ********************************************************
 // LOGIC
 // ********************************************************
-// 
+// Random  7 letters given from an array of 26.
+// The timer once the player "clicks" the first letter.
