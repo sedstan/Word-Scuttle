@@ -1,6 +1,7 @@
 h1{
   height: 100px;
   vertical-align: center;
+  text-align: center;
 }
 
 body{
@@ -14,7 +15,10 @@ body{
   border: solid;
 }
 #displayWindow{
-display: inline-block;
+  height: 100px;
+  width:100px;
+  background:white;
+  border: 1px solid #000;
 }
 
 
@@ -26,13 +30,19 @@ display: inline-block;
   border: 1px solid #000;
 }
 
+button {
+  display: block;
+  float: left;
+  height:50px;
+  width:100px;
+  
+}
+
 .player-square{
   height: 100px;
   width: 100px;
-  float: top;
+  float: left;
   background: white;
   border: 1px solid #000;
 }
-button {
-  display: block;
-}
+

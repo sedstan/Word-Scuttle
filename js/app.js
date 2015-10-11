@@ -31,24 +31,11 @@
 //       BOTTOM: WILL HAVE THE TWO BUTTONS.
                   // Play button will have sound when click.
                   // Skip button will have a sound when clicked.
-                  // 
-   
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
+
 
 window.onload =function({
 
-var playButton:
-var skipButton;
+// onload display random array of letters. tiles = some function of an empty array. listen for click event. When click event happens the timer starts. First we need to get the empty array to display in the class of alphabet-squares
   
     }
 
