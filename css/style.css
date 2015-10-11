@@ -1,5 +1,38 @@
+h1{
+  height: 100px;
+  vertical-align: center;
+}
+
 body{
 
   background-color: maroon;
 }
 
+.upper-box{
+  width: 300px
+  display: inline-block;
+  border: solid;
+}
+#displayWindow{
+display: inline-block;
+}
+
+
+.alphabet-square{
+  height: 100px;
+  width: 100px;
+  float: left;
+  background: white;
+  border: 1px solid #000;
+}
+
+.player-square{
+  height: 100px;
+  width: 100px;
+  float: top;
+  background: white;
+  border: 1px solid #000;
+}
+button {
+  display: block;
+}

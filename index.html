@@ -6,31 +6,40 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <title>Scrable Game</title>
 </head>
+<h1>Scrable Game</h1>
 <body>
   <div id="letters">
-    <ul>
-      <li class="alphabet-square"></li>
-      <li class="alphabet-square"></li>
-      <li class="alphabet-square"></li>
-      <li class="alphabet-square"></li>
-      <li class="alphabet-square"></li>
-      <li class="alphabet-square"></li>
-      <li class="alphabet-square"></li>
+    <ul class="upperBox">
+      <li class="alphabet-square" id="as-0"></li>
+      <li class="alphabet-square" id="as-1"></li>
+      <li class="alphabet-square" id="as-2"></li>
+      <li class="alphabet-square" id="as-3"></li>
+      <li class="alphabet-square" id="as-4"></li>
+      <li class="alphabet-square" id="as-5"></li>
+      <li class="alphabet-square" id="as-6"></li>
     </ul>
   </div>
-  <div id="player-word">
-    <ul>
-      <li class="player-square"></li>
-      <li class="player-square"></li>
-      <li class="player-square"></li>
-      <li class="player-square"></li>
-      <li class="player-square"></li>
-      <li class="player-square"></li>
-      <li class="player-square"></li>
+  <div id="playerWord">
+    <ul class="lower-box">
+      <li class="player-square" id="ps-0"></li>
+      <li class="player-square" id="ps-1"></li>
+      <li class="player-square" id="ps-2"></li>
+      <li class="player-square" id="ps-3"></li>
+      <li class="player-square" id="ps-4"></li>
+      <li class="player-square" id="ps-5"></li>
+      <li class="player-square" id="ps-6"></li>
     </ul>
   </div>
-  <div id="play-button">PlayButton</div>
-  <div id="skip-button">Skip Button</div>
+  <div id="displayWindow">
+  <ul>
+  <li class="score">Score</li>
+  <li class="time">Time:</li>
+  </ul>
+  </div>
+
+  <button type="play-button">Play</button>
+  <button type="skip-button">Skip Button</button>
+  
 
 </body>
 </html>

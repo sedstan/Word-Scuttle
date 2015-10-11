@@ -45,7 +45,14 @@
 // 
 // 
 
-window.onlaod =function({
+window.onload =function({
+
+var playButton:
+var skipButton;
+  
+    }
+
+
 
 
 
