@@ -9,18 +9,18 @@ body{
   background-color: maroon;
 }
 
-.upper-box{
+/*.upper-box{
   width: 300px;
   height: 300px;
   display: inline-block;
-  border: solid;
+  border: solid;*/
 }
 #displayWindow{
   height: 100px;
   width:100px;
   background:white;
   border: 1px solid #000;
-  float: top;
+  /loat: top;
 }
 
 
@@ -32,19 +32,19 @@ body{
   border: 1px solid #000;
 }
 
-button {
+/*button {
   display: block;
-  float: left;
+  float: top;
   height:50px;
   width:100px;
   
-}
+}*/
 
-.player-square{
+/*.player-square{
   height: 100px;
   width: 100px;
   float: left;
   background: white;
   border: 1px solid #000;
 }
-
+*/
