@@ -51,10 +51,11 @@ $(function(){
 });
 
 function play(){
-  $('.player')
+  $('.player');
   dealLetters();
   $('.player').on("click", ".tile", chooseTile);
   // checkSpelling();
+  $('.check').on("click", wordScore);
 }
 
 function createBag(){
@@ -92,6 +93,16 @@ function chooseTile(){
       playersHand.splice(i, 1)
     }
   };
+}
+// This function is to get a word score from the playersGuess if the word is the correct spelling.
+
+
+function wordScore(){
+      var total = 0;
+      $.each(playersGuess,function() {
+          total += this;
+          console.log(this);
+      });
 }
 
 function checkSpelling(){
