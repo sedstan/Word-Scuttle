@@ -91,19 +91,28 @@ function chooseTile(){
       $('.guess').append($(this))
       playersGuess.push(playersHand[i])
       playersHand.splice(i, 1)
-    }
+    } 
   };
 }
-// This function is to get a word score from the playersGuess if the word is the correct spelling.
 
+
+// 
 
 function wordScore(){
-      var total = 0;
-      $.each(playersGuess,function() {
-          total += this;
-          console.log(this);
-      });
+
+  // var dataArray = new Array;
+  // for(var o in letterObject) {
+  //     dataArray.push(letterObject[o]);
+  // }
+
+  // var playerGuessTotal = letterObj.length;
+  // $.each(playersGuess,function(points) {
+  //   total.value += this;
+  //   console.log(this);
+  // });
 }
+
+
 
 function checkSpelling(){
   var string = "";
