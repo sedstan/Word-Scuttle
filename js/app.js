@@ -83,15 +83,21 @@ function dealLetters() {
 }
 
 
- // function chooseTile(){
-  
-    
-  
-   
-   // }
+function chooseTile(){
+  for (var i = 0; i < playersHand.length; i++) {
+    if(playersHand[i].letter === $(this).html()[0]){
+      $(this).remove()
+      $('.guess').append($(this))
+      playersGuess.push(playersHand[i])
+      playersHand.splice(i, 1)
+    }
+  };
+}
 
 function checkSpelling(){
   var string = "";
+
+  console.log(playersGuess);
 
   playersGuess.forEach(function(element, index, array){
     string+= element.letter;
