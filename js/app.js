@@ -1,4 +1,4 @@
-var scores = {
+var letters = {
   "blank": {score: 0, count: 2},
   "a": {score: 1, count: 9},
   "b": {score: 3, count: 2},
