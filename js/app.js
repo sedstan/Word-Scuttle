@@ -100,12 +100,14 @@ function chooseTile(){
 
 function wordScore(){
 
-  // var dataArray = new Array;
-  // for(var o in letterObject) {
-  //     dataArray.push(letterObject[o]);
-  // }
 
-  // var playerGuessTotal = letterObj.length;
+  var total = letter{[points]};
+  debugger
+  $.each(playersGuess,function() {
+      total += this;
+  });
+
+  // var letterObj = letterObj[]
   // $.each(playersGuess,function(points) {
   //   total.value += this;
   //   console.log(this);
