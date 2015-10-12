@@ -54,7 +54,7 @@ function play(){
   $('.player');
   dealLetters();
   $('.player').on("click", ".tile", chooseTile);
-  // checkSpelling();
+  checkSpelling();
   $('.check').on("click", wordScore);
 }
 
@@ -96,23 +96,16 @@ function chooseTile(){
 }
 
 
-// 
+
 
 function wordScore(){
+  for (var i = 0; i < playersGuess.length; i++){
+    
+      console.log(this);
+    }
+  }
+  
 
-
-  var total = letter{[points]};
-  debugger
-  $.each(playersGuess,function() {
-      total += this;
-  });
-
-  // var letterObj = letterObj[]
-  // $.each(playersGuess,function(points) {
-  //   total.value += this;
-  //   console.log(this);
-  // });
-}
 
 
 
