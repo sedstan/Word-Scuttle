@@ -17,7 +17,7 @@
 // ***************************************************************
 // DESIGN - PSEUDO
 // ******************************************************************
-// Page on load: fade in title screen to the game board.
+// Page on load: fade in title screen t.o the game board.
 // BOARD LAYOUT:
 //      TOP: WILL SHOW THE FORMED WORD.
 //              1. This will be a div class of top.
@@ -36,6 +36,10 @@
 window.onload =function({
 
 // onload display random array of letters. tiles = some function of an empty array. listen for click event. When click event happens the timer starts. First we need to get the empty array to display in the class of alphabet-squares
+
+  var tiles;
+
+  
   
     }
 
