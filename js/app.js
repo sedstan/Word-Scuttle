@@ -54,7 +54,7 @@ function play(){
   $('.player')
   dealLetters();
   $('.player').on("click", ".tile", chooseTile);
-  checkSpelling();
+  // checkSpelling();
 }
 
 function createBag(){
@@ -83,7 +83,12 @@ function dealLetters() {
 }
 
 function chooseTile(){
-}
+  // on click .pop letterObj from the playersHand and push into playerGuess.
+  var letterObj = letters[letter];
+    $('.player').on("click", ".tile", chooseTile);
+    console.log("clicked");
+    return playersHand.pop(letterObj);
+   }
 
 function checkSpelling(){
   var string = "";
