@@ -28,8 +28,23 @@ var letters = {
   "z": {letter: "z", points: 10, count: 1},
 }
 
-var playersHand = [];
-var bag = createBag();
+var playersHand  = [];
+var playersGuess = [];
+
+// Correct
+// var playersGuess = [
+//                      {letter: "c"},
+//                      {letter: "a"},
+//                      {letter: "t"},
+//                    ];
+// Incorrect
+// var playersGuess = [
+//                     {letter: "c"},
+//                     {letter: "f"},
+//                     {letter: "t"},
+//                    ];
+var bag          = createBag();
+var dictionary   = window.dictionary;
 
 $(function(){
   $('.start').on("click", play);
@@ -38,6 +53,8 @@ $(function(){
 function play(){
   $('.player')
   dealLetters();
+  $('.player').on("click", ".tile", chooseTile);
+  checkSpelling();
 }
 
 function createBag(){
@@ -63,4 +80,22 @@ function dealLetters() {
 
     $('.player').append('<div class="tile">'+ letterObj.letter + '<div class="points">'+ letterObj.points + '</div></div>');
   }
+}
+
+function chooseTile(){
+}
+
+function checkSpelling(){
+  var string = "";
+
+  playersGuess.forEach(function(element, index, array){
+    string+= element.letter;
+  })
+
+  // Use the dictionary checker
+  dictionary.check(string, function(result){
+    if (!string) return false;
+    var results = result ? "correctly" : "incorrectly";
+    console.log(string + " is spelt " + results);
+  });
 }
