@@ -34,12 +34,22 @@
 
 
 window.onload =function({
+  // player clicks start.
 
 // onload display random array of letters. tiles = some function of an empty array. listen for click event. When click event happens the timer starts. First we need to get the empty array to display in the class of alphabet-squares
-  
-  var letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","blank-1","blank-2"];
+  // each letter corresponds to a value.
 
-  
+document.getElementById('start');
+
+object.addEventListener("click", myScript);
+
+  var letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+
+  var valueOfLetter= [1,3,3,4,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,4,4,8,4,10];
+
+  var letters=valueOfLetter;
+
+  // getElementsByTagName('')
 
 
 
