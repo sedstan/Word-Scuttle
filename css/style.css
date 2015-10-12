@@ -8,7 +8,7 @@ h1 {
 }
 
 .tile-holder {
-  width: 560px;
+  width: 616px;
   height: 88px;
   background: white;
   margin: 10px auto;
@@ -39,4 +39,19 @@ h1 {
   line-height: 20px;
   font-size: 20px;
   text-align: right;
+}
+
+.btn {
+  background: #222;
+  border-radius: 5px;
+  color: white;
+  width: 200px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  border: 4px solid #222;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
 }
