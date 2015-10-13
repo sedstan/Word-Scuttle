@@ -116,7 +116,7 @@ function checkSpelling(){
   dictionary.check(string, function(result){
     if (!string) return false;
     var results = result ? "correctly" : "incorrectly";
-    // console.log(string + " is spelt " + results+" with "+points+" points");
+   
     if(results==="correctly"){
       points+=point
       $('.scoreboard span').html(points);
