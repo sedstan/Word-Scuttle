@@ -82,7 +82,7 @@ function dealLetters() {
 
     playersHand.push(letterObj);
 
-    $('.player').append('<div class="tile">'+ letterObj.letter + '<div class="points">'+ letterObj.points + '</div></div>');
+    $('.player').append('<div class="tile animated pulse">'+ letterObj.letter + '<div class="points">'+ letterObj.points + '</div></div>');
   }
 }
 
@@ -91,6 +91,7 @@ function chooseTile(){
     if(playersHand[i].letter === $(this).html()[0]){
       $(this).remove()
       $('.guess').append($(this))
+      $(this).addClass("zoomIn")
       playersGuess.push(playersHand[i])
       playersHand.splice(i, 1)
       break;
