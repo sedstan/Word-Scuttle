@@ -1,3 +1,5 @@
+window.onload = function() {
+
 var letters = {
   // "blank": {letter: "", points: "", count: 2},
   "a": {letter: "a", points: 1, count: 9},
@@ -75,12 +77,8 @@ function dealLetters() {
     var randomIndex = Math.floor(Math.random()*bag.length);
     var letter      = bag[randomIndex];
     var letterObj   = letters[letter];
-
-    // remove element from the bag
     bag.splice(randomIndex, 1);
-
     playersHand.push(letterObj);
-
     $('.player').append('<div class="tile animated pulse">'+ letterObj.letter + '<div class="points">'+ letterObj.points + '</div></div>');
   }
 }
@@ -113,9 +111,6 @@ function unChooseTile(){
 function checkSpelling(){
   var string = "";
   var point  = 0
-
-  console.log(playersGuess);
-
   playersGuess.forEach(function(element, index, array){
     string += element.letter;
     point  += element.points
@@ -125,7 +120,6 @@ function checkSpelling(){
   dictionary.check(string, function(result){
     if (!string) return false;
     var results = result ? "correctly" : "incorrectly";
-
     if(results==="correctly"){
       points+=point
       $('.scoreboard span').html(points);
@@ -138,4 +132,5 @@ function checkSpelling(){
   $(".tile-holder").empty();
   $('.reset').addClass("hide");
   $('.check').addClass("hide");
+}
 }
