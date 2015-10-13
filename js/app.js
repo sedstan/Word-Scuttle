@@ -58,7 +58,6 @@ function play(){
   playersGuess = []
   $('.tile-holder').html('')
   dealLetters();
-  // $('.check.btn').on("click", wordScore);
 }
 
 function createBag(){
@@ -122,7 +121,7 @@ function checkSpelling(){
     point  += element.points
   })
 
-  // Use the dictionary checker
+  
   dictionary.check(string, function(result){
     if (!string) return false;
     var results = result ? "correctly" : "incorrectly";

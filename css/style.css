@@ -2,36 +2,36 @@ body {
   text-align: center;
   text-decoration: bold;
   line-height: 1.5;
-  background-color: #CBFFFA;
+  background-color: #663333;
 
 }
 
 h1 {
   font-family: Helvetica; 
   font-size: 50px;
-  color:#7F1917;
+  color:#000000;
 }
 
 .scoreboard {
   font-size: 25px;
   font-family: Geneva;
-  color: #7F1917;
+  color: #000000;
 
 }
 
 .messageboard {
   font-size: 25px;
   font-family: Geneva;
-  color: #7F1917;
+  color: #000000;
 
 }
 
 .tile-holder {
   width: 616px;
   height: 88px;
-  background: #21B6A8;
+  background: #CC3300;
   margin: 10px auto;
-  border: 4px solid #7F1917;
+  border: 4px solid #FFCC99;
   border-radius: 5px;
   padding: 4px;
 }
@@ -43,9 +43,9 @@ h1 {
   width: 80px;
   float: left;
   border-radius: 5px;
-  border: 4px solid #7F1917;
+  border: 4px solid #000000;
   text-align: center;
-  color: #7F3D17;
+  color: #000000;
   font-size: 45px;
   font-family: verdana;
   position: relative;
@@ -65,7 +65,7 @@ h1 {
 }
 
 .btn {
-  background: #FFD197;
+  background: #3D3242;
   border-radius: 5px;
   color: white;
   width: 200px;
@@ -77,8 +77,8 @@ h1 {
 }
 
 .btn:hover {
-  background: #FFCCCB;
-  color: #7F3D17;
+  background: #FFCC99;
+  color: black;
 }
 
 .hide {
