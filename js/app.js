@@ -55,6 +55,8 @@ $(function(){
 });
 
 function play(){
+  $('.messageboard span').html("");
+
   playersHand = []
   playersGuess = []
   $('.tile-holder').html('')
@@ -101,12 +103,13 @@ function chooseTile(){
 
 function checkSpelling(){
   var string = "";
+  var point  = 0
 
   console.log(playersGuess);
 
   playersGuess.forEach(function(element, index, array){
-    string+= element.letter;
-    points+= element.points
+    string += element.letter;
+    point  += element.points
   })
 
   // Use the dictionary checker
@@ -115,13 +118,12 @@ function checkSpelling(){
     var results = result ? "correctly" : "incorrectly";
     // console.log(string + " is spelt " + results+" with "+points+" points");
     if(results==="correctly"){
+      points+=point
       $('.scoreboard span').html(points);
-      if(results ==="incorrectly"){
-        $('.scoreboard span').html(!points);
-        $('.messageboard span').html("You Lose!");
-        }  
-
-    } 
+      $('.messageboard span').html("Well done you got it right! You got "+points+" points!");
+    }else{
+      $('.messageboard span').html("You Lose!");
+    }  
 
   });
 
