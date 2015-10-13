@@ -2,27 +2,27 @@ body {
   text-align: center;
   text-decoration: bold;
   line-height: 1.5;
-  background-color: #7A3E48;
+  background-color: #DBB1BC;
 
 }
 
 h1 {
   font-family: Helvetica; 
   font-size: 50px;
-  color:#E18942;
+  color:#58504A;
 }
 
 .scoreboard {
   font-size: 25px;
   font-family: Geneva;
-  color: #E18942;
+  color: #58504A;
 
 }
 
 .messageboard {
   font-size: 25px;
   font-family: Geneva;
-  color: #E18942;
+  color: #58504A;
 
 }
 
@@ -77,7 +77,7 @@ h1 {
 }
 
 .btn:hover {
-  background: #A38D86;
+  background: #58504A;
   color: black;
 }
 
