@@ -1,25 +1,29 @@
 body {
   text-align: center;
+  text-decoration: bold;
   line-height: 1.5;
-  font-family: caslon 
-  background-color: #800000
+  background-color: maroon;
+
 }
 
 h1 {
+  font-family: Helvetica; 
+  font: sans-serif;
   font-size: 50px;
-  font-family: cursive;
-  color: #008080
-
+  color:#000;
 }
 
-.scoreboard{
-  color:#008080;
+.scoreboard {
+  font-size: 25px;
+  font-family: Geneva;
+  color: #000;
+
 }
 
 .tile-holder {
   width: 616px;
   height: 88px;
-  background: white;
+  background: #A38D86;
   margin: 10px auto;
   border: 4px solid #222;
   border-radius: 5px;
@@ -36,6 +40,7 @@ h1 {
   border: 4px solid #222;
   text-align: center;
   font-size: 45px;
+  font-family: verdana;
   position: relative;
 }
 
@@ -56,8 +61,9 @@ h1 {
   color: white;
   width: 200px;
   padding: 10px 20px;
-  margin: 0 auto;
+  margin: 10px auto;
   border: 4px solid #222;
+  font-family: 
   
 }
 
