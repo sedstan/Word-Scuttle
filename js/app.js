@@ -114,8 +114,11 @@ function checkSpelling(){
     var results = result ? "correctly" : "incorrectly";
     console.log(string + " is spelt " + results+" with "+points+" points");
     if(results==="correctly"){
-      $('.scoreboard span').html(points)
-    }
+      $('.scoreboard span').html(points);
+      if(results ==="incorrectly"){
+        $('.scoreboard span').html(!points);
+      }
+    } 
 
   });
 
