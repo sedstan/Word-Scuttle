@@ -1,5 +1,14 @@
-# wdi-ldn-project-1
-First project game
+# Word-Scuttle
+
+## WDI-LDN-16 - Project 1
+
+### Scrable on your own!
+
+In this word game your objective is to make the highest scoring word possible in your hand until you can't!
+
+ 
+
+
 
 // *****************************************************
 // OBJECTIVE

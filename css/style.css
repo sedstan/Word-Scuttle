@@ -80,3 +80,7 @@ h1 {
   background: #A38D86;
   color: black;
 }
+
+.hide {
+  display: none;
+}

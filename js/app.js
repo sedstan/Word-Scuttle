@@ -1,5 +1,5 @@
 var letters = {
-  "blank": {letter: "", points: "", count: 2},
+  // "blank": {letter: "", points: "", count: 2},
   "a": {letter: "a", points: 1, count: 9},
   "b": {letter: "b", points: 3, count: 2},
   "c": {letter: "c", points: 3, count: 2},
@@ -38,9 +38,20 @@ $(function(){
   $('.start').on("click", play);
   $('.check.btn').on("click", checkSpelling);
   $('.player').on("click", ".tile", chooseTile);
+  $('.guess').on("click", ".tile", unChooseTile);
+  $('.reset').on("click", reset);
 });
 
+function reset(){
+  $(".scoreboard span").html("0");
+  $(".messageboard").empty();
+  $(".tile-holder").empty();
+  $('.reset').addClass("hide");
+}
+
 function play(){
+  $('.reset').removeClass("hide");
+  $('.check').removeClass("hide");
   $('.messageboard span').html("");
 
   playersHand = []
@@ -87,6 +98,18 @@ function chooseTile(){
   };
 }
 
+function unChooseTile(){
+  for (var i = 0; i < playersHand.length; i++) {
+    if (playersGuess[i].letter === $(this).html()[0]){
+      $(this).remove()
+      $('.player').append($(this))
+      playersHand.push(playersGuess[i])
+      playersGuess.splice(i, 1)
+      break;
+    } 
+  };
+}
+
 function checkSpelling(){
   var string = "";
   var point  = 0
@@ -110,7 +133,9 @@ function checkSpelling(){
     }else{
       $('.messageboard span').html("You Lose!");
     }  
-
   });
 
+  $(".tile-holder").empty();
+  $('.reset').addClass("hide");
+  $('.check').addClass("hide");
 }
