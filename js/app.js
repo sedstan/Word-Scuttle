@@ -31,19 +31,6 @@ var letters = {
 var playersHand  = [];
 var playersGuess = [];
 var points = 0
-
-// Correct
-// var playersGuess = [
-//                      {letter: "c"},
-//                      {letter: "a"},
-//                      {letter: "t"},
-//                    ];
-// Incorrect
-// var playersGuess = [
-//                     {letter: "c"},
-//                     {letter: "f"},
-//                     {letter: "t"},
-//                    ];
 var bag          = createBag();
 var dictionary   = window.dictionary;
 
@@ -51,7 +38,6 @@ $(function(){
   $('.start').on("click", play);
   $('.check.btn').on("click", checkSpelling);
   $('.player').on("click", ".tile", chooseTile);
-
 });
 
 function play(){
@@ -116,11 +102,11 @@ function checkSpelling(){
   dictionary.check(string, function(result){
     if (!string) return false;
     var results = result ? "correctly" : "incorrectly";
-   
+
     if(results==="correctly"){
       points+=point
       $('.scoreboard span').html(points);
-      $('.messageboard span').html("Well done you got it right! You got "+points+" points!");
+      $('.messageboard span').html("Well done you got it right! You got "+points+" points!"); 
     }else{
       $('.messageboard span').html("You Lose!");
     }  
