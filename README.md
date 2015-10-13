@@ -2,11 +2,15 @@
 
 ## WDI-LDN-16 - Project 1
 
-### Scrable on your own!
+###  Modified Scrable on your own!
+
+## How to play *add a link here to the heroku app.
 
 In this word game your objective is to make the highest scoring word possible in your hand until you can't!
 
-<!-- ## How to play *add a link here to the heroku app.*  -->
+
+
+## Instructions
 
 1.  The player clicks on the 'Deal Letters' button.
 2.  The player chooses and clicks on a letter in the Player's Hand to be placed in the Player's Guess.
