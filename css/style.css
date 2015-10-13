@@ -19,6 +19,13 @@ h1 {
 
 }
 
+.messageboard {
+  font-size: 25px;
+  font-family: Geneva;
+  color: #E18942;
+
+}
+
 .tile-holder {
   width: 616px;
   height: 88px;
@@ -44,6 +51,8 @@ h1 {
   position: relative;
 }
 
+
+
 .points {
   position: absolute;
   bottom: 5px;
@@ -62,7 +71,7 @@ h1 {
   width: 200px;
   padding: 10px 20px;
   margin: 10px auto;
-  border: 4px solid #E18942;
+  border: 4px solid #EECD86;
   font-family: helvetica;
   
 }

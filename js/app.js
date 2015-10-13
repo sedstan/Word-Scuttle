@@ -51,7 +51,7 @@ $(function(){
   $('.start').on("click", play);
   $('.check.btn').on("click", checkSpelling);
   $('.player').on("click", ".tile", chooseTile);
-  
+
 });
 
 function play(){
@@ -113,12 +113,14 @@ function checkSpelling(){
   dictionary.check(string, function(result){
     if (!string) return false;
     var results = result ? "correctly" : "incorrectly";
-    console.log(string + " is spelt " + results+" with "+points+" points");
+    // console.log(string + " is spelt " + results+" with "+points+" points");
     if(results==="correctly"){
       $('.scoreboard span').html(points);
       if(results ==="incorrectly"){
         $('.scoreboard span').html(!points);
-      }
+        $('.messageboard span').html("You Lose!");
+        }  
+
     } 
 
   });
