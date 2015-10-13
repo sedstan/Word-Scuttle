@@ -6,7 +6,11 @@
 
 In this word game your objective is to make the highest scoring word possible in your hand until you can't!
 
- 
+<!-- ## How to play *add a link here to the heroku app.*  -->
+
+1.  The player clicks on the 'Deal Letters' button.
+2.  The player chooses and clicks on a letter in the Player's Hand to be placed in the Player's Guess.
+3. Once the player has formed a word, they click the  
 
 
 
@@ -41,12 +45,12 @@ In this word game your objective is to make the highest scoring word possible in
 //              1.Div class of middle.
 // 
 //       BOTTOM: WILL HAVE THE TWO BUTTONS.
-                  // Play button will have sound when click.
-                  // Skip button will have a sound when clicked.
+// Play button will have sound when click.
+// Skip button will have a sound when clicked.
 
 
 window.onload =function({
-  // player clicks start.
+// player clicks start.
 
 // onload display random array of letters. tiles = some function of an empty array. listen for click event. When click event happens the timer starts. First we need to get the empty array to display in the class of alphabet-squares
-  // each letter corresponds to a value.
+// each letter corresponds to a value.
