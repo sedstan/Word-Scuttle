@@ -51,6 +51,7 @@ $(function(){
   $('.start').on("click", play);
   $('.check.btn').on("click", checkSpelling);
   $('.player').on("click", ".tile", chooseTile);
+  
 });
 
 function play(){
