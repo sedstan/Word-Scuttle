@@ -30,6 +30,7 @@ var letters = {
 
 var playersHand  = [];
 var playersGuess = [];
+var points = 0
 
 // Correct
 // var playersGuess = [
@@ -48,14 +49,16 @@ var dictionary   = window.dictionary;
 
 $(function(){
   $('.start').on("click", play);
+  $('.check.btn').on("click", checkSpelling);
+  $('.player').on("click", ".tile", chooseTile);
 });
 
 function play(){
-  $('.player');
+  playersHand = []
+  playersGuess = []
+  $('.tile-holder').html('')
   dealLetters();
-  $('.player').on("click", ".tile", chooseTile);
-  checkSpelling();
-  $('.check').on("click", wordScore);
+  // $('.check.btn').on("click", wordScore);
 }
 
 function createBag(){
@@ -83,7 +86,6 @@ function dealLetters() {
   }
 }
 
-
 function chooseTile(){
   for (var i = 0; i < playersHand.length; i++) {
     if(playersHand[i].letter === $(this).html()[0]){
@@ -91,23 +93,10 @@ function chooseTile(){
       $('.guess').append($(this))
       playersGuess.push(playersHand[i])
       playersHand.splice(i, 1)
+      break;
     } 
   };
 }
-
-
-
-
-function wordScore(){
-  for (var i = 0; i < playersGuess.length; i++){
-    
-      console.log(this);
-    }
-  }
-  
-
-
-
 
 function checkSpelling(){
   var string = "";
@@ -116,12 +105,18 @@ function checkSpelling(){
 
   playersGuess.forEach(function(element, index, array){
     string+= element.letter;
+    points+= element.points
   })
 
   // Use the dictionary checker
   dictionary.check(string, function(result){
     if (!string) return false;
     var results = result ? "correctly" : "incorrectly";
-    console.log(string + " is spelt " + results);
+    console.log(string + " is spelt " + results+" with "+points+" points");
+    if(results==="correctly"){
+      $('.scoreboard span').html(points)
+    }
+
   });
+
 }
