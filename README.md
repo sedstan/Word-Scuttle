@@ -2,13 +2,11 @@
 
 ## WDI-LDN-16 - Project 1
 
-###  Modified Scrable on your own!
-
-## How to play *add a link here to the heroku app.
+### Scrable on your own! #####[Play it here!](https://wordscuttle.herokuapp.com/ "Here!")
 
 In this word game your objective is to make the highest scoring word possible in your hand until you can't!
 
-
+![ ] [./images/Scuttle01.tiff] 
 
 ## Instructions
 
