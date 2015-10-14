@@ -23,9 +23,12 @@ In this word game your objective is to make the highest scoring word possible in
 
 4. If your answer is correct, your score is added and you play again. If your answer is incorrect, your lose! 
 
+
 ![](./images/Scuttle04.jpg)
 ![](./images/Scuttle05.jpg)
 ![](./images/Scuttle06.jpg)
+
+5. If you lose, press the Reset button to start again.
 
 ####Approach / How it works
 
