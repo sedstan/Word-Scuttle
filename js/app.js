@@ -45,6 +45,7 @@ $(function(){
 });
 
 function reset(){
+  points = 0
   $(".scoreboard span").html("0");
   $(".messageboard").empty();
   $(".tile-holder").empty();

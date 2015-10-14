@@ -2,9 +2,9 @@
 
 ## WDI-LDN-16 - Project 1
 
-#### Sing player Scrabble! [Play it here!](https://wordscuttle.herokuapp.com/ "Here!")
+#### Single player Scrabble! [Play it here!](https://wordscuttle.herokuapp.com/ "Here!")
 
-![ ][./images/Scuttle01.tiff]
+![](./images/Scuttle01.jpg)
 
 In this word game your objective is to make the highest scoring word possible in your hand until you can't!
 
