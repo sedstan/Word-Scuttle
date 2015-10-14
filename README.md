@@ -12,10 +12,20 @@ In this word game your objective is to make the highest scoring word possible in
 ## Instructions
 
 1.  The player clicks on the Deal Letters button.
-2.  The player chooses and clicks on a letter in the Player's Hand to be placed in the Player's Guess.
-3. Once the player has formed a word, they click the Check Answer button.
-4. If your answer is correct, your score is added and you play again. If your answer is incorrect, your lose!  
 
+![](./images/Scuttle02.jpg)
+
+2.  The player chooses and clicks on a letter in the Player's Hand to be placed in the Player's Guess.
+
+3. Once the player has formed a word, they click the Check Answer button.
+
+![](./images/Scuttle03.jpg)
+
+4. If your answer is correct, your score is added and you play again. If your answer is incorrect, your lose! 
+
+![](./images/Scuttle04.jpg)
+![](./images/Scuttle05.jpg)
+![](./images/Scuttle06.jpg)
 
 ####Approach / How it works
 
@@ -28,7 +38,7 @@ When an answer is played the board will clear. If the answer is correct the user
  The biggest problem was getting the point value for each letter to score the word.
 
 
-####The build
+####The Build
 
 * HTML 5, CSS and jQuery were used to create this game. 
 * Animation was created using the Animate.css stylesheet.  
