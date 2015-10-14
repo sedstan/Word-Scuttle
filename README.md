@@ -4,6 +4,8 @@
 
 #### Sing player Scrabble! [Play it here!](https://wordscuttle.herokuapp.com/ "Here!")
 
+![ ][./images/Scuttle01.tiff]
+
 In this word game your objective is to make the highest scoring word possible in your hand until you can't!
 
 
