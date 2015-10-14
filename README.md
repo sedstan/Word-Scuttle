@@ -23,7 +23,7 @@ Once the user clicks the Check Answer button it is checked using a library made 
 
 When an answer is played the board will clear. If the answer is correct the user score will be displayed. If the answer is incorrect the user loses the game.
 
- The user has the option to reset the his/her score once the letters are dealt.
+ The biggest problem was getting the point value for each letter to score the word.
 
 
 ####The build
