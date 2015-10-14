@@ -126,7 +126,7 @@ function checkSpelling(){
       $('.scoreboard span').html(points);
       $('.messageboard span').html("Well done you got it right! You got "+points+" points!"); 
     }else{
-      $('.messageboard span').html("You Lose! Press Reset to play again.");
+      $('.messageboard span').html("You Lose!");
     }  
   });
 
