@@ -2,57 +2,37 @@
 
 ## WDI-LDN-16 - Project 1
 
-### Scrable on your own! #####[Play it here!](https://wordscuttle.herokuapp.com/ "Here!")
+#### Scrable on your own! [Play it here!](https://wordscuttle.herokuapp.com/ "Here!")
 
 In this word game your objective is to make the highest scoring word possible in your hand until you can't!
 
-![ ] [./images/Scuttle01.tiff] 
 
 ## Instructions
 
 1.  The player clicks on the 'Deal Letters' button.
 2.  The player chooses and clicks on a letter in the Player's Hand to be placed in the Player's Guess.
-3. Once the player has formed a word, they click the  
+3. Once the player has formed a word, they click the Check Answer button.
+4. If your answer is correct, your score is added and you play again. If your answer is incorrect, your lose!  
 
 
+####Approach / How it works
 
-// *****************************************************
-// OBJECTIVE
-// ******************************************************
-// 
-// The game is scrabble. The player is given seven letters to make a word. The player has one mintue to make as many words as possible. 
+When the user clicks the Deal Letters button random letters are generated allowing the user to form words from the tiles. 
 
-// ********************************************************
-// LOGIC
-// ********************************************************
-// Random  7 LETTERS given from an array of 26. (This is at the top). These are 7 squares for the individual tile.
-// The TIMER once the player "clicks" the first letter.
-// player "clicks and drags letter" to the DISPLAY WINDOW.
-// The display window will be in the center. It will have 7 spaces. 
-// Below that is a PLAY BUTTON and a SKIP BUTTON. The skip button will SUBTRACT 10 POINTS from your total score if you press it.
-// There will be a display to keep your total score after one minute.
-// After time expires, the player is alerted to their score and will be asked to play again by.
-// ***************************************************************
-// DESIGN - PSEUDO
-// ******************************************************************
-// Page on load: fade in title screen t.o the game board.
-// BOARD LAYOUT:
-//      TOP: WILL SHOW THE FORMED WORD.
-//              1. This will be a div class of top.
-//                  Each square should be an empty array [0]; 
-//             2.    
-//
-//       MIDDLE: WILL HAVE THE PLAYER'S RANDOMIZED TILES. TIMER AND SCORE WILL BE BELOW THAT.
-//       
-//              1.Div class of middle.
-// 
-//       BOTTOM: WILL HAVE THE TWO BUTTONS.
-// Play button will have sound when click.
-// Skip button will have a sound when clicked.
+Once the user clicks the Check Answer button it is checked using a library made from an online dictionary API. 
+
+When an answer is played the board will clear. If the answer is correct the user score will be displayed. If the answer is incorrect the user loses the game.
+
+ The user has the option to reset the his/her score once the letters are dealt.
 
 
-window.onload =function({
-// player clicks start.
+####The build
 
-// onload display random array of letters. tiles = some function of an empty array. listen for click event. When click event happens the timer starts. First we need to get the empty array to display in the class of alphabet-squares
-// each letter corresponds to a value.
+* HTML 5, CSS and jQuery were used to create this game. 
+* Animation was created using the Animate.css stylesheet.  
+
+#### Problems & Challenges
+
+The biggest problem was getting the point value for each letter to score the word.
+
+
