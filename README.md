@@ -2,14 +2,14 @@
 
 ## WDI-LDN-16 - Project 1
 
-#### Scrable on your own! [Play it here!](https://wordscuttle.herokuapp.com/ "Here!")
+#### Sing player Scrabble! [Play it here!](https://wordscuttle.herokuapp.com/ "Here!")
 
 In this word game your objective is to make the highest scoring word possible in your hand until you can't!
 
 
 ## Instructions
 
-1.  The player clicks on the 'Deal Letters' button.
+1.  The player clicks on the Deal Letters button.
 2.  The player chooses and clicks on a letter in the Player's Hand to be placed in the Player's Guess.
 3. Once the player has formed a word, they click the Check Answer button.
 4. If your answer is correct, your score is added and you play again. If your answer is incorrect, your lose!  
